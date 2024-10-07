@@ -1,6 +1,13 @@
 import streamlit as st
 import pandas as pd
 
+st.set_page_config(
+    page_title="Bike Sharing Analysis Dashboard",
+    layout="wide",
+    initial_sidebar_state="expanded"
+)
+
+
 st.title('Analisis Data Peminjam Sepeda')
 
 url = 'https://raw.githubusercontent.com/Nusa186/Projek_Analisis_data/main/Dashboard/day.csv'
