@@ -3,6 +3,7 @@ import pandas as pd
 
 st.set_page_config(
     page_title="Bike Sharing Analysis Dashboard",
+    page_icon=":bike:",
     layout="wide",
     initial_sidebar_state="expanded"
 )
