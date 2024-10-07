@@ -3,7 +3,9 @@ import pandas as pd
 
 st.title('Analisis Data Peminjam Sepeda')
 
-df = pd.read_csv('day.csv')
+url = 'https://raw.githubusercontent.com/Nusa186/Projek_Analisis_data/main/Dashboard/day.csv'
+
+df = pd.read_csv(url)
 df['dteday'] = pd.to_datetime(df['dteday'])
 
 tabs = st.tabs(["Tren Peminjaman Musim Semi 2011", "Tren Peminjaman Pengguna Terdaftar Q1 2012", "Tren Peminjaman Penguna Casual dan Terdaftar"])
